@@ -1,0 +1,21 @@
+html,
+body {
+    height: 100%;
+    font-family: sans-serif;
+}
+body {
+    perspective: 600px;
+}
+
+@keyframes spin {
+    to {
+        transform: rotateY(360deg) rotateZ(360deg) rotateX(720deg);
+    }
+}
+
+.ani {
+    animation: spin 4s linear infinite;
+}
+.drum {
+    background: url('http://keithclark.co.uk/labs/css-fps/drum2.png');
+}
